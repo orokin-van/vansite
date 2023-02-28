@@ -1,7 +1,5 @@
 <template>
-  <div>
-    index
-  </div>
+  <div>fa</div>
 </template>
 
 <script lang="ts" setup>

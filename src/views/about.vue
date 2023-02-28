@@ -3,7 +3,7 @@
     <!-- <h1>This is an about page</h1>
     <h3>counter: {{counter}}</h3>
     <el-button type="primary" @click="add"><el-icon-plus></el-icon-plus></el-button> -->
-    <img class="author" src="./../assets/author.jpg" alt="" />
+    <img class="author" src="./../assets/image/author.jpg" alt="" />
 
     <div class="abstract-item">
       <div class="title">
@@ -29,7 +29,7 @@
     <div class="info-wrapper">
       <div class="personal-info-wrapper">
         <img
-          src="./../assets/author.jpg"
+          src="./../assets/image/author.jpg"
           alt="author-avatar"
           class="personal-img"
         />
@@ -80,7 +80,7 @@ svg {
   margin: 0 auto 20px;
   padding: 16px 20px;
   overflow: hidden;
-  border-radius: 0.25rem;
+  border-radius: 12px;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   transition: all 0.3s;
@@ -93,7 +93,7 @@ svg {
 
   .title {
     position: relative;
-    font-size: 1.28rem;
+    font-size: 19px;
     line-height: 46px;
     display: inline-block;
     pointer-events: auto;
@@ -134,13 +134,13 @@ svg {
 
   i {
     display: inline-block;
-    line-height: 1.5rem;
+    line-height: 23px;
 
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 15px;
 
       span {
-        margin-left: 0.5rem;
+        margin-left: 12px;
       }
     }
   }
@@ -156,7 +156,7 @@ svg {
     flex: 0 0 300px;
     height: auto;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 0.25rem;
+    border-radius: 12px;
     box-sizing: border-box;
     padding: 0 15px;
     background: #fff;
@@ -166,22 +166,22 @@ svg {
     }
 
     .personal-img {
-          display: block;
-    margin: 2rem auto 1rem;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
+      display: block;
+      margin: 30px auto 15px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
     }
 
     .name {
-          font-size: 1rem;
+          font-size: 15px;
       text-align: center;
       color: #242424;
     }
 
     .num {
       display: flex;
-    margin: 0 auto 1rem;
+    margin: 0 auto 15px;
     width: 80%;
 
       >div {
@@ -189,7 +189,7 @@ svg {
         flex: 0 0 50%;
 
         h3 {
-          margin: 0 0 0.6rem;
+          margin: 0 0 12px;
           color: #242424;
         }
 

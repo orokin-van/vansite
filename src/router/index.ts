@@ -4,40 +4,52 @@ import Error404 from '@/views/404.vue'
 import About from '@/views/about.vue'
 import Tool from '@/views/tool.vue'
 import Img from '@/views/img.vue'
+import Layout from '@/Layout/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
+    name: 'Layout',
+    component: Layout,
     meta: {
       title: 'orokin-van'
-    }
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
-    meta: {
-      title: 'about'
-    }
-  },
-  {
-    path: '/tool',
-    name: 'Tool',
-    component: Tool,
-    meta: {
-      title: '工具类'
     },
     children: [
       {
-        path: 'img',
-        name: 'Img',
-        component: Img,
+        path: '/',
+        name: 'Home',
+        component: Home,
         meta: {
-          title: '图片'
+          title: 'orokin-van',
+          isHome: true,
         },
-      }
+      },
+      {
+        path: '/about',
+        name: 'About',
+        component: About,
+        meta: {
+          title: 'about'
+        }
+      },
+      {
+        path: '/tool',
+        name: 'Tool',
+        component: Tool,
+        meta: {
+          title: '工具类'
+        },
+        children: [
+          {
+            path: '/img',
+            name: 'Img',
+            component: Img,
+            meta: {
+              title: '图片'
+            },
+          }
+        ]
+      },
     ]
   },
   {
